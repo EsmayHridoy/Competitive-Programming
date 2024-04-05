@@ -5,6 +5,7 @@ using namespace std;
 #define ll long long
 ll cas = 1;
 #define Case cout<<"Case "<<cas<<": ";cas++;
+
 ll Stoi(string str) {
     ll num = 0;
     ll mul = 1;
@@ -61,10 +62,9 @@ int main() {
     ll T = 1;
     cin >> T;
     while (T--) {
-        string s1, s2;
-        cin >> s1 >> s2;
-        ll l = Stoi(s1);
-        ll r = Stoi(s2);
+        
+        ll l,r;
+        cin>>l>>r;
         ll ans = 0;
         if (l >= r) swap(l, r);
         if (l == 0) ans++;
