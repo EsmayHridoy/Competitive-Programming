@@ -1,0 +1,53 @@
+
+
+
+
+
+module BilinearResize(
+    input [7:0] in_image[0:HEIGHT-1][0:WIDTH-1], // Input image
+    output reg [7:0] out_image[0:NEW_HEIGHT-1][0:NEW_WIDTH-1] // Output resized image
+);
+
+parameter HEIGHT = 100; // Input image height
+parameter WIDTH = 100; // Input image width
+parameter NEW_HEIGHT = 50; // Resized image height
+parameter NEW_WIDTH = 50; // Resized image width
+
+always @(*) begin
+    // Calculate scale factors
+    real scale_x = real(WIDTH) / real(NEW_WIDTH);
+    real scale_y = real(HEIGHT) / real(NEW_HEIGHT);
+
+    // Loop over each pixel in the resized image
+    for (int i = 0; i < NEW_HEIGHT; i++) begin
+        for (int j = 0; j < NEW_WIDTH; j++) begin
+            // Calculate the corresponding position in the original image
+            real x = real(j) * scale_x;
+            real y = real(i) * scale_y;
+
+            // Determine the 4 nearest pixels in the original image
+            int x0 = $floor(x);
+            int x1 = x0 + 1;
+            int y0 = $floor(y);
+            int y1 = y0 + 1;
+
+            // Calculate the weights for interpolation
+            real weight_x0 = x1 - x;
+            real weight_x1 = x - x0;
+            real weight_y0 = y1 - y;
+            real weight_y1 = y - y0;
+
+            // Perform bilinear interpolation
+            int interpolated_value = 
+                (in_image[y0][x0] * weight_x0 * weight_y0) +
+                (in_image[y0][x1] * weight_x1 * weight_y0) +
+                (in_image[y1][x0] * weight_x0 * weight_y1) +
+                (in_image[y1][x1] * weight_x1 * weight_y1);
+
+            // Assign the interpolated value to the output pixel
+            out_image[i][j] = interpolated_value;
+        end
+    end
+end
+
+endmodule

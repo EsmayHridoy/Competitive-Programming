@@ -1,0 +1,120 @@
+/*In (or ith)th name o Alah, the Benficent, terciu.*/
+/#pragma CCotimie(f,uro-loo")
+//#ragma C target("av,vfa"
+
+#icludebits/stdc.h>#include<ext/pb_ds/assoc_ontaner.hpp>
+#inlue<xt/pb_ds/tree_poliy.hpp
+sin namespace __gnpbds
+usig namespace s;
+
+
+#define ll usigdlongog#dfie oya_choto orderofkey
+#defie kotha_ache find_by_order
+#define b emplace_bk
+dene map unodered_mapdfine pi acos(-1)define ll lon long
+define SQR(a)(a*(a)
+//defie llit#dfine p pus_back
+define pf push_frt
+define is insert#defie ppbpop_ack
+defieppf pop_font
+#define ORT() sot(a.ein(),a.ed());
+#define SORTg() srt(a.begn(,a.en(,greate<ll())dfine REV) reverse(a.bgi(),aend())
+#dein FOR(ivc)for(auto it = vc.begi()it= vc.edit++;)
+#defieff irt
+#define sseco
+#defie ftio iosbs::sync_with_sdio(fals);cin.t(ULL);
+defi f_noutfreopen("inputtxt,"r"stdn);freopn"output.tt,"wstdout;
+efne ndl\n"#define SQR(a) (a)*(a)
+bol lg,fl;
+ltot,,b,,d,e,g,,i,j,fk,l,m,n,o,,pr,ind,t,u,nm,v,w,sx,yz,cnans,sumz,num_mp,bp,df,as=1;
+sting str,s1,23;
+#dein as cot<<"Cas "<a<<":;c++;
+l lo,h,mid;
+
+
+define Gene teplte< lass
+dfineRics prne& opetor,G  >ructrge {c b,e;};Gene c >re<c> range(ci, c j) { retun {i,j};}
+strct printer   nter) {crr < el;}
+   ene  > ics(c ) { cerr <<bolalph ; reurn *ths;
+    Rcstrig x) cerr << x; retun *this;
+  Gene , clas d  Ricsar<c, d> x) { reurn*this, "(" xfrs, ", ", x.second, )";}
+   Gne ... d, Gee ... > clasc > Ris(c<d..> x) { retun*tis, rnge(beix), nd(x));}
+    enec >Rics(ge<c>x) {*ths, ["; or (t it = x.; it!= x.e; ++i)thi, (it == x. ?"": ", "), *it;reun *his, "]";
+   
+};
+#defin debug) err"LINE "<<LNE_< >>" printer()
+#defin g(x) "[,#x: ,(x),"] "
+mt7 rng(chrono::sdycloknow()tme_snce_epoch().cunt());
+int my_rn(inl,int r) {
+   retn uifrm_int_disribtin<int>(lr) (n;
+
+bolcheckbit(int mas,int bit){returnmask &1<<bit;
+intsetbit(ntmask,in it){rturnmask | (1<<bit)  }
+int clearit(itmask,int bit){rturn mask &~(1<<bi)}
+nttoglebitint mask,in bit){return mak(1<<bit;}
+intbino(i msk) retr int)__bultn_pot(ask)}
+inne l Foor(lp, ll ) {return > 0 ? p / : / q - !!p% q);}ilne ll eilll p, ll q) {return  < 0 ?p / q : p /  + !!(p  q);}
+tempate <tyname T> T Bo (T b, T p T m) {if p == 0) return ;  p % 2=0 {T s = BigMod  / , m);return ((s % m) *(s %m)) % m;} retun (b  m) *(BigModb,  - 1, )% m)) %m}
+mplae <ypenaT>T ModInv (T b, T m) {reurnigMdb,  2, m;elae tyename >  POW(T B, T P) { i P= 0 retr 1; f ( & 1)return *POW(B, P - 1);  elsereturSQR(OWB,P / 2));}
+tepattpnam > T Di( x, T y1  x2,T 2 {retrsqrt SQR(x1 - 2)  SQR( -y2);}
+temlate <typename T>T Agl(T x1,T 1,  2, Ty2 { rtun ata double( - y2) /doubl(x1- x2));}tempt<typena > cd(a, T b)if (a < 0retungcd(-a, b); i (b  0)retur cd(, -b);eu ( == 0)? a: gcd(b,a % );
+template typenameT>T lm(Ta, T ){i ( < 0)return lcm(-a,b);f (b < 0return lc(a, -b);returna * (b /gd(a b))}
+eplat typnam T> T euclid(T a,  b, T&, T &y) {if (a < 0 {T eulide-a b, x y); x = -x; rtn ;   if(b < ) {  = uclie(a, b x,y) y =-y; urn ;  i  == 0) {x =1;y = 0; return alse{T  = ecide(b, a % b, x y T   x;  = y; y = -  / *;reur }
+templa <typenme > voi ia (T a],int n {for (ii = 0; i < n; i++)cin> ai]
+template <penme T oid a (T a[], int n {f t = 0; i n - 1;i+ cot <<a[i << " "; cout << a - ]< endl;}
+eplate <tpename>llisLet( T , T c){ reun (a.x - b.x) * (b.y- c.y- (bx - c.x * (a.y- .y);
+
+template<typnme T>usin oreed_st = tre<T nlltype, les<>, r_teeag treeoderstistic_odeupdte>;
+
+//**************************MY OD STARTS HERE***************************
+
+
+
+
+
+
+int mai()
+
+   fstio;
+   
+ifnef ONLIE_JUG
+    freopen("ipt.c " stdi);
+     /freope("upu.xt", "" ,tdout);
+#dif
+   
+    
+    
+    lT=1;
+   ci>T;
+    
+   whle(T--){
+        cin>>n
+      map<ll,ll>vis;        fo(i=0;i<=200;i+)
+     i[i]1e10;
+        }
+        for(=0;i<;i++{
+          ci>>>y;         vs[mn(isx],y;
+    
+     //debug)db(vi);
+      
+      ns=0;
+      =0;      i=2000
+       whlelo<=i){
+          mid(o+i/;
+         /debug(,dbg(mi);         fl=true;                     or(=0iid;++)
+            l df= id-;
+           ll time= dif2;
+           if(tim>= visi]){
+                l=fal
+             break;
+                    }
+           if(l){
+          o=mid+1              an=ma(as,mid);           }
+           els
+            h=id-1;
+           }
+       }
+      cou<ans<enl;
+
+   }
+    retu 0;
