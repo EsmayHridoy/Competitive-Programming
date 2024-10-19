@@ -1,3 +1,6 @@
+// 1545. Find Kth Bit in Nth Binary String
+// cpp Solution
+
 class Solution {
 public:
     char findKthBit(int n, int k) {
